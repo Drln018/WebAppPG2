@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optibot</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="optiBoot" width="200">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <!-- Aquí se usa ms-auto para alinear a la derecha -->
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Educación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mycalendar.html">Mi Calendario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="doctor.html">Contactar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="img/perfil.png" width="20" height="20" alt="Perfil">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="img/ajustes.png" width="20" height="20" alt="Ajustes">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Sección de tarjetas de oftalmólogos -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Nuestros Oftalmólogos</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Tarjeta Doctor 1 -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Juan Pérez</h5>
+                        <p class="card-text">Especialista en cataratas y glaucoma.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#doctor1Modal">Más información</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Doctor 1 -->
+            <div class="modal fade" id="doctor1Modal" tabindex="-1" aria-labelledby="doctor1ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="doctor1ModalLabel">Dr. Juan Pérez</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Especialidad:</strong> Cataratas y glaucoma</p>
+                            <p><strong>Experiencia:</strong> Más de 15 años en cirugía oftalmológica.</p>
+                            <p><strong>Clínica:</strong> Clínica Oftalmológica Central</p>
+                            <p><strong>Ubicación:</strong> Calle 123, Ciudad de Guatemala</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Doctor 2 -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Dra. María López</h5>
+                        <p class="card-text">Experta en cirugía refractiva y láser.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#doctor2Modal">Más información</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Doctor 2 -->
+            <div class="modal fade" id="doctor2Modal" tabindex="-1" aria-labelledby="doctor2ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="doctor2ModalLabel">Dra. María López</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Especialidad:</strong> Cirugía refractiva y tratamientos láser.</p>
+                            <p><strong>Experiencia:</strong> Más de 10 años en tratamientos oftalmológicos avanzados.</p>
+                            <p><strong>Clínica:</strong> Clínica VisualCare</p>
+                            <p><strong>Ubicación:</strong> Avenida Reforma 456, Ciudad de Guatemala</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta Doctor 3 -->
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Carlos Gómez</h5>
+                        <p class="card-text">Especialista en retina y vítreo.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#doctor3Modal">Más información</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Doctor 3 -->
+            <div class="modal fade" id="doctor3Modal" tabindex="-1" aria-labelledby="doctor3ModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="doctor3ModalLabel">Dr. Carlos Gómez</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><strong>Especialidad:</strong> Retina y vítreo</p>
+                            <p><strong>Experiencia:</strong> Pionero en tratamientos avanzados de retina en la región.</p>
+                            <p><strong>Clínica:</strong> Centro de Retina y Vítreo</p>
+                            <p><strong>Ubicación:</strong> Zona 10, Ciudad de Guatemala</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Contactar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
